@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', 'Laravel Gezi&Aktivite Sitesi');
+@section('title', 'Laravel Gezi&Aktivite Sitesi GitHub');
 
 @section('description')
 
