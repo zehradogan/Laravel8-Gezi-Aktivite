@@ -25,6 +25,9 @@ Route::get('/', function () {
 Route::redirect('/anasayfa', '/home') ->name('anasayfa');
 Route::get('/home', [HomeController::class, 'index']) -> name('home');
 
+//Admin
+Route::get('/admin', [\App\Http\Controllers\Admin\HomeController::class, 'index']) -> name('adminhome');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

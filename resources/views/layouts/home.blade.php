@@ -1,45 +1,61 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <title> @yield('title') </title>
-    <!--/tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@yield('title')</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Abril+Fatface:400,700" rel="stylesheet">
+
+    <meta name="description" content="@yield('description')" />
     <meta name="keywords" content="@yield('keywords')" />
-    <meta name="description" content="@yield('description') ">
-    <meta name="author" content="Zehra Doğan">
-    <script type="application/x-javascript">
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
+    <meta name="author" content="Zehra Doğan" />
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-    <!--//tags -->
-    <link href="{{asset('assets')}}/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{asset('assets')}}/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{asset('assets')}}/css/font-awesome.css" rel="stylesheet">
-    <!-- //for bootstrap working -->
-    <link href="//fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/animate.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/aos.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/fancybox.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/animsition.min.css">
+
+
+    <link rel="stylesheet" href="{{asset('assets')}}/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/fonts/fontawesome/css/font-awesome.min.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
+
+    <!--
+    //////////////////////////////////////////////////////
+
+    Free Template
+    DESIGNED & DEVELOPED by free-template.co
+
+    Website:    https://free-template.co
+    Email:      freetemplate.co@gmail.com
+    Twitter:    https://twitter.com/Free_Templateco
+    Facebook:   https://www.facebook.com/Free.Template.co/
+
+    //////////////////////////////////////////////////////
+     -->
+
+
 </head>
-
 <body>
-    @include('home._header');
 
+<div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+    @include('home._header')
+    @include('home._sections')
+    @include('home._footer')
+</div>
 
-    @include('home._banner');
-
-
-    @section('content')
-
-    @show
-
-    @include('home._testimonials');
-    @include('home._footer');
-    @yield('footerjs');
+<script src="{{asset('assets')}}/js/jquery-3.2.1.min.js"></script>
+<script src="{{asset('assets')}}/js/popper.min.js"></script>
+<script src="{{asset('assets')}}/js/bootstrap.min.js"></script>
+<script src="{{asset('assets')}}/js/owl.carousel.min.js"></script>
+<script src="{{asset('assets')}}/js/jquery.fancybox.min.js"></script>
+<script src="{{asset('assets')}}/js/animsition.min.js"></script>
+<script src="{{asset('assets')}}/js/aos.js"></script>
+<script src="{{asset('assets')}}/js/main.js"></script>
 </body>
-
 </html>

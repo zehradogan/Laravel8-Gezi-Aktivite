@@ -1,59 +1,39 @@
-<div class="header">
-    <div class="top_menu_w3layouts">
-        <div class="container">
-            <div class="header_left">
-                <ul>
-                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1143 New York, USA</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> +(010) 221 918 811</li>
-                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
-                </ul>
-            </div>
-            <div class="header_right">
+
+<header class="site-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 site-logo" data-aos="fade"><a href="index.html" class="animsition-link">Hepta</a></div>
+            <div class="col-8">
 
 
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-
-    <div class="content white">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <h1>Travel Trip</h1>
-                    </a>
+                <div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <!--/.navbar-header-->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <nav>
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="codes.html">Codes</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="icons.html">Icons</a></li>
-                                    <li class="divider"></li>
+                <!-- END menu-toggle -->
 
-                                </ul>
-                            </li>
-                            <li><a href="mail.html">Mail Us</a></li>
-                        </ul>
+                <div class="site-navbar js-site-navbar">
+                    <nav role="navigation">
+                        <div class="container">
+                            <div class="row full-height align-items-center">
+                                <div class="col-md-12 justify-content-center">
+                                    <ul class="list-unstyled menu">
+                                        <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
+                                        <li><a href="hotel.html" class="animsition-link">Hotels</a></li>
+                                        <li><a href="about.html" class="animsition-link">About Us</a></li>
+                                        <li><a href="gallery.html" class="animsition-link">Gallery</a></li>
+                                        <li><a href="blog.html" class="animsition-link">News</a></li>
+                                        <li><a href="contact.html" class="animsition-link">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </nav>
                 </div>
-                <!--/.navbar-collapse-->
-                <!--/.navbar-->
             </div>
-        </nav>
+        </div>
     </div>
-</div>
+</header>
+<!-- END head -->
+
