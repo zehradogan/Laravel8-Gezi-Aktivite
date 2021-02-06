@@ -18,6 +18,7 @@
     <!-- Standard iPhone Touch Icon-->
     <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
     <!-- Styles -->
+    <link href="{{asset('assets')}}/admin/fontAwesome/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="{{asset('assets')}}/admin/css/lib/themify-icons.css" rel="stylesheet">
     <link href="{{asset('assets')}}/admin/css/lib/mmc-chat.css" rel="stylesheet" />
     <link href="{{asset('assets')}}/admin/css/lib/sidebar.css" rel="stylesheet">
@@ -25,6 +26,8 @@
     <link href="{{asset('assets')}}/admin/css/lib/nixon.css" rel="stylesheet">
     <link href="{{asset('assets')}}/admin/lib/lobipanel/css/lobipanel.min.css" rel="stylesheet">
     <link href="{{asset('assets')}}/admin/css/style.css" rel="stylesheet">
+    <script src="{{asset('js')}}/ckeditor/ckeditor.js"></script>
+
     @yield('css')
     @yield('javascript')
 </head>
@@ -57,6 +60,7 @@
 <script src="{{asset('assets')}}/admin/js/lib/datamap/datamaps.world.min.js"></script>
 <script src="{{asset('assets')}}/admin/js/lib/datamap/datamap-init.js"></script>
 <script src="{{asset('assets')}}/admin/lib/lobipanel/js/lobipanel.js"></script>
+
 <!-- // Datamap -->
 <script src="{{asset('assets')}}/admin/js/scripts.js"></script>
 <!-- scripit init-->
@@ -69,7 +73,5 @@
         });
     });
 </script>
-
 </body>
-
 </html>

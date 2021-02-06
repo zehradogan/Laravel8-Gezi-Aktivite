@@ -1,3 +1,4 @@
+
 <x-jet-form-section submit="updateProfileInformation">
     <x-slot name="title">
         {{ __('Profile Information') }}
@@ -65,6 +66,14 @@
             <x-jet-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" />
             <x-jet-input-error for="email" class="mt-2" />
         </div>
+
+        <!-- Phone -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="phone" value="{{ __('phone') }}" />
+            <x-jet-input id="phone" type="phone" class="mt-1 block w-full" wire:model.defer="state.phone" />
+            <x-jet-input-error for="phone" class="mt-2" />
+        </div>
+
     </x-slot>
 
     <x-slot name="actions">
